@@ -46,3 +46,8 @@ body, html {
     align-items: center;
     height: 100%; /* Ensure the anchor tags also stretch */
 }
+
+.head .site-title {
+    font-weight: bold; /* Make the font bold */
+    font-size: 1.5rem; /* Adjust the font size as needed */
+}
