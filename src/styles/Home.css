@@ -1,0 +1,33 @@
+/* Home.css */
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #282c34;
+    color: white;
+  }
+  
+  .plop-text {
+    font-size: 4rem;
+    font-weight: bold;
+    animation: plopIn 0.5s ease forwards; /* Animation with ease and forwards to keep the final state */
+    transform-origin: center; /* Ensures the word moves as a whole */
+  }
+  
+  @keyframes plopIn {
+    0% {
+      transform: translateX(100%); /* Start the word just off to the right of its position */
+      opacity: 0; /* Start with the word invisible */
+    }
+    60% {
+      transform: translateX(-10%); /* Slight overshoot to create a "plop" effect */
+      opacity: 1; /* Fully visible */
+    }
+    100% {
+      transform: translateX(0); /* End at the final position */
+      opacity: 1; /* Fully visible */
+    }
+  }
+  

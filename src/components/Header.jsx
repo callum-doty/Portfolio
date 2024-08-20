@@ -1,25 +1,31 @@
 import '../styles/Header.css';
-import { Link } from 'react-router-dom';
+import { Link, useMatch, useResolvedPath } from "react-router-dom"
+
 
 export default function Header() {
-    return <nav className="head">
-        <a href="/" className="site-title">Portfolio</a>
+    return (
+      <nav className="head">
+        <Link to="/" className="site-title">
+          Site Name
+        </Link>
         <ul>
-            <li>
-                <a href="/Home">Home</a>
-            </li>
-            <li>
-                <a href="/About">About</a>
-            </li>
-            <li>
-                <a href="/Experience">Experience</a>
-            </li>
-            <li>
-                <a href="/Work">Work</a>
-            </li>
+          <CustomLink to="/About">About</CustomLink>
+          <CustomLink to="/Experience">Experience</CustomLink>
+          <CustomLink to="/Work">Work</CustomLink>
         </ul>
-    
-    </nav>
-}
-
-
+      </nav>
+    )
+  }
+  
+  function CustomLink({ to, children, ...props }) {
+    const resolvedPath = useResolvedPath(to)
+    const isActive = useMatch({ path: resolvedPath.pathname, end: true })
+  
+    return (
+      <li className={isActive ? "active" : ""}>
+        <Link to={to} {...props}>
+          {children}
+        </Link>
+      </li>
+    )
+  }

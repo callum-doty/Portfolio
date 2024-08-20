@@ -1,10 +1,14 @@
-import Header from './components/Header'
+import Header from './components/Header.jsx';  // Import the Header component
+import Home from './pages/Home.jsx';      // Import the Home component
+import About from './pages/About';    // Import the About component
+import Experience from './pages/Experience';  // Import the Experience component
+import Work from './pages/Work';      // Import the Work component
 import './styles/App.css';
 import { Route, Routes } from "react-router-dom"
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Header />
       <div className="container">
         <Routes>
@@ -14,8 +18,10 @@ function App() {
           <Route path="/Work" element={<Work />} />
         </Routes>
       </div>
-    </div>
-  );
+    </>
+  )
 }
 
 export default App;
+
+
