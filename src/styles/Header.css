@@ -1,53 +1,32 @@
 * {
-    box-sizing: border-box;
-}
-
-body, html {
-    height: 100%;
-    margin: 0;
+    font-family: "Teko", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3rem;
+    
 }
 
 .head {
-    background-color: azure;
-    color: darkgray;
+    padding: 20px;
+    margin: 0;
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
-    padding: 0; /* Remove padding to avoid gaps */
-    height: 80px;
-}
-
+    align-items: center;
+    border-bottom: 0; /* Remove any border between header and content */
+    
+  }
+  
 .head ul {
-    padding: 0;
-    margin: 0;
-    margin-right: 1rem;
     list-style: none;
     display: flex;
-    height: 100%; /* Ensure the ul takes the full height */
-}
-
-.head li {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    padding: 0; /* Remove padding to avoid gaps */
-}
-
-.head li:hover {
-    background-color: pink;
-    height: 100%; /* Stretch to the full height of the header */
-}
-
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+  }
+  
 .head a {
-    color: inherit;
-    padding: 0 1rem; /* Add horizontal padding */
     text-decoration: none;
-    display: flex;
-    align-items: center;
-    height: 100%; /* Ensure the anchor tags also stretch */
-}
-
-.head .site-title {
-    font-weight: bold; /* Make the font bold */
-    font-size: 1.5rem; /* Adjust the font size as needed */
-}
+    padding: 10px 15px;
+    color: whitesmoke;
+  }
+  

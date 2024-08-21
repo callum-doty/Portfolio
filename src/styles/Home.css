@@ -5,13 +5,16 @@
     justify-content: center;
     align-items: center;
     height: 100vh; /* Full viewport height */
-    background-color: #282c34;
-    color: white;
+    transition: background-color 0.5s ease; /* Smooth transition for background color */
   }
   
   .plop-text {
-    font-size: 4rem;
-    font-weight: bold;
+    height: 50%;
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 7rem;
     animation: plopIn 0.5s ease forwards; /* Animation with ease and forwards to keep the final state */
     transform-origin: center; /* Ensures the word moves as a whole */
   }
