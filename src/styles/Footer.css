@@ -1,0 +1,45 @@
+/* Footer.css */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+    background-color: rgb(219, 219, 219);
+    color: #fff;
+  }
+  
+  .footer-column {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .footer-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+    padding: 20px;
+    color: rgb(38, 38, 38);
+  }
+  
+  .footer-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+  }
+  
+  .footer-cta {
+    font-size: 3rem;
+  }
+  
+  .footer-name {
+    font-family: 'Pacifico', cursive; /* Use a cursive font like Pacifico */
+    font-size: 1.5rem;
+  }
+  
+  /* Ensure that the footer content doesn't overlap or get too close */
+  .footer p, .footer a {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  

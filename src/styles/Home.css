@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh; /* Full viewport height */
-    transition: background-color 0.5s ease; /* Smooth transition for background color */
+    transition: background-color 2s ease, color 1s ease;
   }
   
   .plop-text {
@@ -15,8 +15,10 @@
     font-weight: 500;
     font-style: normal;
     font-size: 7rem;
-    animation: plopIn 0.5s ease forwards; /* Animation with ease and forwards to keep the final state */
+    animation: slideIn 5s ease infinite; /* Animation with ease and forwards to keep the final state */
     transform-origin: center; /* Ensures the word moves as a whole */
+    text-shadow: 7px 2px 6px rgba(0, 0, 0, 0.3);
+    
   }
   
   @keyframes plopIn {
