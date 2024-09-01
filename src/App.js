@@ -13,7 +13,7 @@ function App() {
 
   // Define the colors and words for the Home page
   const colors = ['#DDDBDE', '#CAD4DF', '#656E77', '#3B373B'];
-  const words = ['DEVELOPER', 'DESIGNER', 'CREATOR', 'INNOVATOR'];
+  const words = ['HI, IM CALLUM', 'DATA VISUALIZATION', 'WEB DEVELOPMENT', 'INFORMATION TECHNOLOGY', 'CREATIVE NETWORK'];
   const [index, setIndex] = useState(0);
 
   useEffect(() => {

@@ -1,12 +1,14 @@
 /* Footer.css */
 
+
+
 .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 130px;
     background-color: rgb(219, 219, 219);
-    color: #fff;
+
   }
   
   .footer-column {
@@ -26,14 +28,30 @@
     transform: scale(1.1); /* Slightly enlarge the icon on hover */
   }
   
+ /* Increase specificity */
+footer .footer-cta {
+    font-size: 3rem;
+    color: rgb(38, 38, 38);
+  }
+  
+  footer .footer-name {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+    color: rgb(38, 38, 38);
+  }
+  
+  /* Use !important (if necessary, but try to avoid this if possible) */
   .footer-cta {
     font-size: 3rem;
+    color: rgb(38, 38, 38) !important;
   }
   
   .footer-name {
-    font-family: 'Pacifico', cursive; /* Use a cursive font like Pacifico */
+    font-family: 'Great Vibes', cursive;
     font-size: 1.5rem;
+    color: rgb(38, 38, 38);
   }
+  
   
   /* Ensure that the footer content doesn't overlap or get too close */
   .footer p, .footer a {

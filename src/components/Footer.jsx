@@ -14,7 +14,7 @@ export default function Footer() {
         <a href="https://www.linkedin.com/in/callum-doty-62b501192" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faLinkedin} className="footer-icon" />
         </a>
-        <a href="mailto:your-email@example.com">
+        <a href="mailto:doty.callum9@gmail.com">
           <FontAwesomeIcon icon={faEnvelope} className="footer-icon" />
         </a>
       </div>

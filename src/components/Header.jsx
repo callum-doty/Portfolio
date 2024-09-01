@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <nav className="head">
       <Link to="/" className="site-title">
-        Site Name
+        CD Logo
       </Link>
       <ul>
         <CustomLink to="/About">About</CustomLink>
