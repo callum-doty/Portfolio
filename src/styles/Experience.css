@@ -1,0 +1,96 @@
+/* Experience.css */
+
+/* Fullscreen container */
+.experience-container {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    background-color: transparent; /* Transparent background */
+  }
+  
+  /* Bento grid layout to cover the screen */
+  .bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 boxes per row */
+    grid-gap: 20px;
+    width: 100%;
+    height: auto; /* Allow grid to grow beyond the height of the viewport */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Individual bento box styling */
+  .bento-box {
+    position: relative;
+    background-color: #f4f4f4;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 400px; /* Increase the height here */
+  }
+  
+  .bento-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Image that fills the top of the bento box */
+  .bento-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* On hover, the image becomes slightly more opaque */
+  .bento-box:hover .bento-image {
+    opacity: 1;
+  }
+  
+  /* Content inside the bento box */
+  .bento-content {
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.7); /* Black overlay for readability */
+    padding: 20px;
+    color: white;
+    text-align: left;
+    border-radius: 0 0 15px 15px;
+  }
+  
+  .project-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .project-description {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+  
+  .learn-more {
+    font-size: 1rem;
+    color: #ffcc00; /* Accent color for the link */
+    text-decoration: none;
+  }
+  
+  .learn-more:hover {
+    text-decoration: underline;
+  }
+  
+  /* Ensures responsiveness */
+  @media (max-width: 768px) {
+    .bento-grid {
+      grid-template-columns: 1fr; /* Stack boxes on smaller screens */
+    }
+  }
+  

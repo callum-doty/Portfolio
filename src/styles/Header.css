@@ -21,12 +21,12 @@
     display: flex;
     margin: 0;
     padding: 0;
-    color: whitesmoke;
+    color: rgb(202, 202, 202);
   }
   
 .head a {
     text-decoration: none;
     padding: 10px 15px;
-    color: whitesmoke;
+    color: rgb(137, 137, 137);
   }
   

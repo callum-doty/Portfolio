@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faSignature } from '@fortawesome/free-solid-svg-icons';
 import '../styles/Footer.css'; // Import the CSS file for styling
 
 export default function Footer() {
@@ -22,7 +22,7 @@ export default function Footer() {
         <p className="footer-cta">Let's Connect!</p>
       </div>
       <div className="footer-column">
-        <p className="footer-name">Callum Doty</p>
+        <img src="assets/signature.png" alt="Signature" className="footer-signature" />
       </div>
     </footer>
   );
