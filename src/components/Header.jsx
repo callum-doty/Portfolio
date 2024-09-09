@@ -5,12 +5,12 @@ export default function Header() {
   return (
     <nav className="head">
       <Link to="/" className="site-title">
-        CD Logo
+        Callum Doty
       </Link>
       <ul>
         <CustomLink to="/About">About</CustomLink>
         <CustomLink to="/Experience">Experience</CustomLink>
-        <CustomLink to="/Work">Work</CustomLink>
+        <CustomLink to="/Work">Blog</CustomLink>
       </ul>
     </nav>
   );

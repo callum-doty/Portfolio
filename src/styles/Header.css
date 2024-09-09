@@ -1,32 +1,35 @@
 * {
-    font-family: "Teko", sans-serif;
-    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
     font-style: normal;
-    font-size: 1.3rem;
+    font-size: .9rem;
     
 }
 
 .head {
-    padding: 20px;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 0; /* Remove any border between header and content */
-    
-  }
+  padding: 5px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  
+  /* Add a 1px solid white border to the bottom */
+  border-bottom: 1px solid white;  
+}
+
   
 .head ul {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
-    color: rgb(202, 202, 202);
+    color: rgb(255, 255, 255);
   }
   
 .head a {
     text-decoration: none;
     padding: 10px 15px;
-    color: rgb(137, 137, 137);
+    color: rgb(255, 255, 255);
   }
   
