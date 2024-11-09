@@ -19,9 +19,6 @@ export default function Footer() {
         </a>
       </div>
       <div className="footer-column">
-        <p className="footer-cta">Let's Connect!</p>
-      </div>
-      <div className="footer-column">
         <img src="assets/signature.png" alt="Signature" className="footer-signature" />
       </div>
     </footer>

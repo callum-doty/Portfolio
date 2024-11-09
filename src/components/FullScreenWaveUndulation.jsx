@@ -17,8 +17,8 @@ const FullScreenWaveUndulation = () => {
   const waveFrequency = 0.5;
   const minHoverRadius = 1;
   const maxHoverRadius = 5;
-  const speedMultiplier = 1.5; // Adjust this to change sensitivity to mouse speed
-  const hoverDuration = 0.3; // Adjust this value for slower or faster growth/shrink
+  const speedMultiplier = 0.7; // Adjust this to change sensitivity to mouse speed
+  const hoverDuration = 0.2; // Adjust this value for slower or faster growth/shrink
 
 
   const { cols, rows } = useMemo(() => ({

@@ -1,38 +1,158 @@
 /* Home.css */
+/* Remove the universal background color */
+/* * {
+  background-color: rgb(239, 255, 239);
+} */
 
-.home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Full viewport height */
-    transition: background-color 2s ease, color 1s ease;
+/* Apply background color to body or specific components that need it */
+body {
+  background-color: rgb(238, 247, 238);
+}
+
+.home-wrapper {
+  position: relative;
+  isolation: isolate;
+  background: transparent;
+  min-height: 100vh;
+}
+
+@keyframes riseAndFade {
+  0% {
+    transform: translateY(8vh);
+    opacity: 0;
   }
-  
-  .plop-text {
-    height: 50%;
-    font-family: "Teko", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 7rem;
-    animation: slideIn 5s ease infinite; /* Animation with ease and forwards to keep the final state */
-    transform-origin: center; /* Ensures the word moves as a whole */
-    text-shadow: 7px 2px 6px rgba(0, 0, 0, 0.3);
-    
+  20% {
+    opacity: 0;
   }
-  
-  @keyframes plopIn {
-    0% {
-      transform: translateX(100%); /* Start the word just off to the right of its position */
-      opacity: 0; /* Start with the word invisible */
-    }
-    60% {
-      transform: translateX(-10%); /* Slight overshoot to create a "plop" effect */
-      opacity: 1; /* Fully visible */
-    }
-    100% {
-      transform: translateX(0); /* End at the final position */
-      opacity: 1; /* Fully visible */
-    }
+  100% {
+    transform: translateY(0);
+    opacity: 0.2;
   }
-  
+}
+
+@keyframes layoutReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dot-pattern-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-image: url('/public/assets/bkg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  pointer-events: none;
+  background-color: transparent;
+  animation: riseAndFade 2.3s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+/* Layout animation elements */
+.layout-element {
+  opacity: 0;
+  animation: layoutReveal 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.3s;
+}
+
+.delay-2 {
+  animation-delay: 0.6s;
+}
+
+.delay-3 {
+  animation-delay: 0.9s;
+}
+
+/* Ensure the animation container doesn't clip */
+.layout-animation {
+  overflow: visible;
+}
+
+/* Make animations smoother */
+.layout-element {
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+
+/* Optional: Add hover effects for interactive elements */
+.layout-element:hover {
+  transition: transform 0.3s ease;
+  transform: translateY(-2px);
+}
+
+/* Adjust existing media queries if needed */
+@media (max-width: 768px) {
+  .layout-element {
+    animation-duration: 0.8s; /* Slightly faster on mobile */
+  }
+}
+
+.home-content {
+  min-height: calc(100vh - 80px);
+  padding: 8rem 1.5rem;
+  width: 100%;
+  position: relative;
+  /* Remove any background color here */
+  background: transparent;
+}
+
+/* Make sure other components are also transparent */
+.home-container,
+.projects-container,
+.vertical-text,
+.projects-section {
+  background: transparent;
+}
+
+.vertical-text {
+  writing-mode: vertical-lr;
+  transform: rotate(360deg);
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+  letter-spacing: 0.1em;
+  color: #9ca3af;
+  padding: 2rem 0;
+  margin-right: 6rem;
+  position: relative;
+  height: max-content;
+}
+
+.projects-section {
+  margin: 1rem 0;
+  display: grid;
+  gap: 16rem;
+  padding: 2rem 0;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .home-container,
+  .projects-container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-content {
+    padding: 2rem 1rem;
+  }
+
+  .vertical-text {
+    font-size: 2.5rem;
+    margin-right: 1.5rem;
+  }
+}

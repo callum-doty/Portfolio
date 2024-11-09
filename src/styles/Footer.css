@@ -7,7 +7,8 @@
     justify-content: space-between;
     align-items: center;
     height: 130px;
-    background-color: rgb(219, 219, 219);
+    background-color: transparent;
+    border-top: 2px solid #07d600;
 
   }
   
@@ -17,8 +18,8 @@
   }
   
   .footer-icon {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     transition: transform 0.3s;
     padding: 20px;
     color: rgb(38, 38, 38);
@@ -30,15 +31,11 @@
   
  /* Increase specificity */
 footer .footer-cta {
-    font-size: 3rem;
+    font-size: 2rem;
     color: rgb(38, 38, 38);
   }
   
-  footer .footer-name {
-    font-family: 'Pacifico', cursive;
-    font-size: 1.5rem;
-    color: rgb(38, 38, 38);
-  }
+
   
   /* Use !important (if necessary, but try to avoid this if possible) */
   .footer-cta {
@@ -48,7 +45,7 @@ footer .footer-cta {
   
   .footer-name {
     font-family: 'Great Vibes', cursive;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: rgb(38, 38, 38);
   }
   
@@ -60,8 +57,8 @@ footer .footer-cta {
   }
   
   .footer-signature {
-    height: 80px;
-    width: 380px;
+    height: 70px;
+    width: 370px;
   }
   
   
