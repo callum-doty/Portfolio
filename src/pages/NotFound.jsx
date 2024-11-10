@@ -6,7 +6,7 @@ const NotFound = () => {
   return (
     <div className="not-found-container">
       <img 
-        src="../assets/scoob.png" 
+        src="/assets/scoob.png" 
         alt="Scooby Doo" 
       />
       <h1>ZOINKS</h1>

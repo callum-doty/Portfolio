@@ -6,12 +6,13 @@ const blogPosts = [
   { 
     id: 1, 
     title: "DUI", 
-    content: "Freedom, Independence, and Bayesian Analysis",
+    content: "Drinking, Driving, and Bayesian Analysis",
     fullContent: `You've just hit a milestone - you're 16 and finally have your driver's license in hand. The freedom and independence you feel are exhilarating. Eager to enjoy your newfound autonomy, you hop into your car for an evening drive. But as luck would have it, your adventure takes an unexpected turn when a police officer flags you down for a routine traffic stop.
 
 The officer's demeanor is stern, and you sense their suspicion as they request to conduct a few tests. Despite feeling nervous, you comply, and take a breathalyzer test to determine if you're under the influence of alcohol. You test positive and are promptly arrested.
 
 Keep in mind: 
+
 1. The breathalyzer indicates false drunkenness in only 5% of cases when the driver is sober
 2. The breathalyzers never fail to detect a truly drunk person
 3. One in a thousand drivers in your region drive drunk 
@@ -25,14 +26,17 @@ What if I told you that based on the positive breathalyzer test, the probability
 Hopefully, I caught your attention. To explain this, I will introduce a few key concepts. First, Bayes theorem, named after the Reverend Thomas Bayes, is a fundamental concept in probability theory and statistics. It describes the probability of an event, based on prior knowledge of conditions that might be related to the event.
 
 There are many variations but for this context it is expressed as: 
+
 P(A | B) = P(B | A)×P(A) / P(B) 
 
 If we were to describe the formula above, it would translate to: 
+
 P(A | B) is the conditional probability of event A occurring given that event B has occurred.
 P(B | A) is the conditional probability of event B occurring given that event A has occurred.
 P(A) and P(B) are the probabilities of events A and B occurring independently of each other.
 
 Let's apply Bayes Theorem to your situation. Let:
+
 D = You are drunk
 S = You are sober
 tD = The test indicates you are drunk
@@ -40,6 +44,7 @@ tD = The test indicates you are drunk
 The new equation would look like this: P(D | tD) = P(tD | D)×P(D)  /  P(tD) 
 
 This may look a bit intimidating, lets translate this into natural language: 
+
 Pr (D) is the prior probability of D
 Pr (D | tD) is the posterior probability of D
 Pr (tD | D) is the likelihood of D
@@ -61,15 +66,15 @@ Pr (tD | D) = 1
 Pr (tD | S) = .05
 
 Sweet! So now we plug in our number to find Pr(tD): Pr (tD | D) x Pr (D) + Pr (tD | S) x Pr (S)
-      (1 x .001) + (.05 x .999) = 0.05095
+
+(1 x .001) + (.05 x .999) = 0.05095
 Pr(tD) = 0.05095
 
 Lets plug in the new value for Pr(tD) into the original problem.
+
 Pr (D | tD) = Pr (tD | D) x Pr (D) / Pr (tD)
- 
 (1 x .001) / .05095 = 0.01962709
                         
-
 Convert this to a percentage, the probability that you were driving drunk, based on the positive breathalyzer test alone, is 1.96%
 
 Life changing right?
@@ -142,12 +147,14 @@ The reality is that there is a random amount of noise per voxel. Noise is a rand
 Applying this to what we see everyday, it is not hard to find a self-help social media post claiming a new solution to weight loss is blah blah blah. Claiming that eliminating all carbohydrates in your diet is good for you and has helped numerous people with weight loss. Similar to the spikes in salmon brain voxels, thousands of those viewers bought into this idea and tried this remedy. The odds are, by chance alone, someone lost weight. Those few people return to the post and spread news of their success and get the most attention.
 
 Let's put this in an equation that represents the argument about the odds of weight loss given solution x. But first we need to make a few assumptions:
+
 1. Each person's outcome (whether they lose weight or not) is independent of each other
 2. The probability (p) of a person losing weight due to the solution (x) or by random chance is the same per person
 3. The outcome for each person is binary: they either lose weight (success) or they do not (failure)
 4. There is a sufficiently large number of people n trying the solution
 
 Let's introduce our variables:
+
 n - total number of people trying the weight loss solution
 p - probability of weight loss due to the solution or random chance
 k - number of people who report successful weight loss
@@ -160,14 +167,17 @@ Imagine 5 people trying this diet. Similar to the voxel spikes, we might find th
 What is the probability of seeing exactly k successes out of n people trying the diet. Per successful person(k), we multiply by the chance of success(p), and for each unsuccessful person, we multiply by 1-p (the chance of failure).
 
 Combining our variables we get:
+
 P(X = k) = binomial{n}{k} × p^k × (1-p)^(n-k)
 
 Applying this equation to our weight loss example,
+
 n = 5 (total friends)
 k = 3 (successful friends)
 p = 0.09 (9% chance of random success cited from https://pmc.ncbi.nlm.nih.gov/articles/PMC4539812/)
 
 Breakdown the equation into three pieces:
+
 Binomial{5}{3} = 10 (there are 10 different ways to pick 3 friends from a group of 5)
 (0.09)³ = 0.000729 (probability of 3 successes)
 (1-0.09)⁵⁻³ = (0.91)² = 0.8281 (probability of 2 failures)

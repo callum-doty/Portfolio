@@ -49,16 +49,14 @@ const Palter = () => {
             <div className="info-section">
               <h2 className="info-title">Problem</h2>
               <p className="info-text">
-                Given the opportunity to create a game, I was tasked with creating a physical game that was 
-                replayable, thought-provoking, understandable, and most importantly FUN.
+              When challenged to design a game, I created a physical experience that balanced key elements: replayability, strategic depth, intuitive rules, and above all – pure fun.
               </p>
             </div>
 
             <div className="info-section">
               <h2 className="info-title">Solution</h2>
               <p className="info-text">
-                After a lot of user testing, many variations of the game, and user feedback; a game called Palter was born.
-                This met most of my expectations of being replayable, thought-provoking, understandable, and fun.
+              After multiple iterations and rigorous user testing, <br />I developed Palter – a game that achieves its core goals: replayability, strategic depth, accessibility, and fun.
               </p>
             </div>
 
@@ -66,7 +64,7 @@ const Palter = () => {
               <h2 className="info-title">My role</h2>
               <p className="info-text">
                 Lead Concept Researcher <br /> Lead Qualitative Researcher <br /> Lead Material Researcher <br /> Lead Graphic Designer <br />
-                <br /> Lead Package Designer <br /> Lead Brand Designer
+                Lead Package Designer <br /> Lead Brand Designer
               </p>
             </div>
 

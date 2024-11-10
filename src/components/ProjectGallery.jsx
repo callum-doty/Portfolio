@@ -199,7 +199,10 @@ const SimpleGallery = () => {
 
   return (
     <div className="gallery-container">
-      <div className="vertical-text2">Project Gallery</div>
+      <div classname="title">
+        <div className="vertical-text2">Project Gallery</div>
+        <div className="disclaimer">DISCLAIMER: THE WORKS PRESENTED ARE FOR DEMONSTRATION PURPOSES ONLY AND DO NOT REFLECT PERSONAL VIEWS OR OPINION. <br />I HAVE EITHER CREATED OR EDITED THE ARTWORK BELOW.</div>
+      </div>
       <div className="masonry-gallery" ref={galleryRef}>
         {distributeItems().map((column, columnIndex) => (
           <div key={columnIndex} className="masonry-column">

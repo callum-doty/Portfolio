@@ -58,7 +58,7 @@
   color: #9ca3af;
   padding: 2rem;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   position: relative;
   height: max-content;
   gap: 5rem;
@@ -112,4 +112,15 @@
   padding: 20px;
   font-size: 14px;
   color: #666;
+}
+
+.disclaimer {
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 0.05em;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-left: 2.5rem;
+  margin-bottom: 2rem;
 }

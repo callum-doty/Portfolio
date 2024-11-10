@@ -22,7 +22,7 @@ const About = () => {
               Graduating in early 2023, I have honed my skills information technology, computer science, web development, graphic design, and am beginning my journey into deep learning.
             </p>
             <p>
-              I seek to research and build applications and concepts on the job or in my free time.
+            I'm passionate about building applications and researching emerging technologies, continuously creating both at work and in my personal time.
             </p>
           </div>
         </div>

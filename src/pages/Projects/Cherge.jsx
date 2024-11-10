@@ -43,18 +43,16 @@ const Cherge = () => {
             <div className="info-section">
               <h2 className="info-title">Problem</h2>
               <p className="info-text">
-              With my target audience of chess players in mind, I conducted market research and 
-              identified a gap: the demand for fully customizable chess pieces.
-              How can I create an e-commerce platform that allows users to design and personalize their own chess pieces?
+              After extensive market research within the chess community, I discovered an untapped opportunity: players wanted to design their own custom chess pieces. 
+              
               </p>
             </div>
 
             <div className="info-section">
               <h2 className="info-title">Solution</h2>
               <p className="info-text">
-                Using a goal-directed design approach, 
-                I used qualitative research methods, competitive analysis, user interviews, and data-driven 
-                insights to bring this website to fruition.
+              Through goal-directed design methodology, I developed the platform using a comprehensive approach: qualitative research, 
+              competitive analysis, user interviews, and data-driven insights shaped every aspect of the final website.
               </p>
             </div>
 

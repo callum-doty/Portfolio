@@ -42,17 +42,16 @@ const Mycelium = () => {
             <div className="info-section">
               <h2 className="info-title">Problem</h2>
               <p className="info-text">
-              With a team of 18 graphic designers, we were tasked with ideating, budgeting, designing, printing, and assembling a catalog for ninety clients.
-              Collaborating with two additional teams, installation and branding, we must create a cohesive catalog that captures the theme of "mycelium".
+              I led a team of 18 graphic designers in creating a comprehensive catalog for ninety clients, overseeing everything from concept to completion. 
+              Working alongside installation and branding teams, we crafted a cohesive publication centered on the theme of 'mycelium'.
               </p>
             </div>
 
             <div className="info-section">
               <h2 className="info-title">Solution</h2>
               <p className="info-text">
-                After extensive research, project collection, and communication between teams, we put together a catalog that was both elegant and on brand. 
-                Each page allows for one students project given a template that they selected. The pages are vellum paper in which you may overlay any combination
-                of project for an interesting composition.
+              Our solution combined elegance with innovation: individual vellum pages showcase each student's work through customized templates. 
+              The translucent design enables viewers to create dynamic compositions by overlaying different projects, embodying the interconnected nature of mycelium.
               </p>
             </div>
 
