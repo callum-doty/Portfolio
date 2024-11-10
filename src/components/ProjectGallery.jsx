@@ -1,22 +1,16 @@
 import { useState, useEffect, useRef } from 'react';
 import '../styles/ProjectGallery.css';
-import { Link } from 'react-router-dom';
+import { Link, Routes, Route, useParams, useNavigate } from 'react-router-dom';
 import { Document, Page, pdfjs } from 'react-pdf';
 
-// Set up PDF.js worker
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
-
-const SingleImage = ({ src }) => (
-  <div className="single-image-view">
-    <img src={src} alt="Full view" className="single-image" />
-  </div>
-);
 
 const SimpleGallery = () => {
   const galleryRef = useRef(null);
   const [columns, setColumns] = useState(3);
   const [numPages, setNumPages] = useState(null);
-  
+
+
   const projects = [
     {
       id: 'rand1',
@@ -192,27 +186,38 @@ const SimpleGallery = () => {
     return columnArrays;
   };
 
+  // Function to get GitHub raw content URL
+  const getGitHubPDFUrl = (path) => {
+    // Using your specific GitHub repository
+    const githubBaseUrl = 'https://github.com/callum-doty/Portfolio/blob/main/public';
+    // Remove leading slash if present and encode the path
+    const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+    // For raw content, use the raw.githubusercontent.com domain
+    const rawUrl = `https://raw.githubusercontent.com/callum-doty/Portfolio/main/public/${cleanPath}`;
+    return rawUrl;
+  };
+
   return (
-    <>
-      <div className="gallery-container">
-        <div className="vertical-text2">Project Gallery</div>
-        <div className="masonry-gallery" ref={galleryRef}>
-          {distributeItems().map((column, columnIndex) => (
-            <div key={columnIndex} className="masonry-column">
-              {column.map((project) => (
-                <Link
-                  key={project.id}
-                  to={`/gallery/image/${project.id}`}
-                  className="masonry-item"
-                >
-                  {renderItem(project)}
-                </Link>
-              ))}
-            </div>
-          ))}
-        </div>
+    <div className="gallery-container">
+      <div className="vertical-text2">Project Gallery</div>
+      <div className="masonry-gallery" ref={galleryRef}>
+        {distributeItems().map((column, columnIndex) => (
+          <div key={columnIndex} className="masonry-column">
+            {column.map((project) => (
+              <a
+                key={project.id}
+                href={getGitHubPDFUrl(project.image)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="masonry-item"
+              >
+                {renderItem(project)}
+              </a>
+            ))}
+          </div>
+        ))}
       </div>
-    </>
+    </div>
   );
 };
 
