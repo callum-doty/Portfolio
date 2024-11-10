@@ -84,3 +84,32 @@
   gap: 40px;
   align-items:center;
 }
+
+
+.pdf-document {
+  width: 100%;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  min-height: 200px;
+}
+
+.pdf-document .react-pdf__Page {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.pdf-document .react-pdf__Page canvas {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: contain;
+}
+
+/* Loading state */
+.pdf-document.react-pdf__Document--loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #666;
+}
