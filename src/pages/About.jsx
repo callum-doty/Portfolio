@@ -1,6 +1,7 @@
 
 import React from 'react';
 import '../styles/About.css';
+import profile from "../assets/profile.png"
 
 const About = () => {
   return (
@@ -9,7 +10,7 @@ const About = () => {
         <div className="about-container">
           <div className="image-column">
             {/* Replace with your image */}
-            <img src="..\assets\profile.png" alt="Profile" className="profile-image" />
+            <img src={profile} alt="Profile" className="profile-image" />
           </div>
           
           <div className="text-column">

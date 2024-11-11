@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/Blog.css'; 
-
+import salmon from "../assets/salmon.png"
 
 const blogPosts = [
   { 
@@ -135,10 +135,11 @@ This raises a few questions:
     id: 3, 
     title: "Empathetic Salmon", 
     content: "Improbable things happen more often than you'd think.",
-    img: '/assets/salmon.png',
+    img: salmon,
     fullContent: `Imagine I told you a dead salmon can correctly assess the emotions of humans. You would probably be pretty skeptical or wave me off thinking I had gone a bit crazy. I would counter with concrete evidence of fMRI images of a salmon's brain in which each scan, broken down into voxels (an fMRI method that breaks each scan down into thousands of pieces), corresponds to small sections of the salmon brain. Two groups of these voxels, one in the spinal column and the other in the medial brain cavity, were highly successful at recognizing human facial expressions.' 
 
-    '/assets/salmon.png'
+
+'${salmon}'
 
 'Woah! Imagine how empathetic a living salmon would be! This was an actual study presented at the 2009 Organization for Human Brain Mapping Conference (it won an Ig Nobel prize).
 
