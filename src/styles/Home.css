@@ -48,7 +48,7 @@ body {
   width: 100vw;
   height: 100vh;
   z-index: -1;
-  background-image: url('/public/assets/bkg.png');
+  background-image: url('/src/assets/bkg.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

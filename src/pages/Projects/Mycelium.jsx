@@ -1,18 +1,27 @@
 import React from 'react';
 import '../../styles/Mycelium.css';
 
+import heroImg from '../../assets/mycelium/DSC01688-1024x683.jpg';
+import img1 from '../../assets/mycelium/DSC01689-1024x683.jpg';
+import img2 from '../../assets/mycelium/DSC01691-1024x683.jpg';
+import img3 from '../../assets/mycelium/DSC01692-1024x683.jpg';
+import img4 from '../../assets/mycelium/DSC01695-1024x683.jpg';
+import img5 from '../../assets/mycelium/DSC01697-1024x683.jpg';
+import img6 from '../../assets/mycelium/DSC01699-1024x683.jpg';
+import img7 from '../../assets/mycelium/DSC01700-1024x683.jpg';
+import img8 from '../../assets/mycelium/DSC01704-1024x683.jpg';
+
 const Mycelium = () => {
 
   const galleryImages = [
-    { src: "/assets/mycelium/DSC01689-1024x683.jpg", alt: "Gallery Image 1" },
-    { src: "/assets/mycelium/DSC01691-1024x683.jpg", alt: "Gallery Image 2" },
-    { src: "/assets/mycelium/DSC01692-1024x683.jpg", alt: "Gallery Image 3" },
-    { src: "/assets/mycelium/DSC01695-1024x683.jpg", alt: "Gallery Image 4" },
-    { src: "/assets/mycelium/DSC01697-1024x683.jpg", alt: "Gallery Image 5" },
-    { src: "/assets/mycelium/DSC01699-1024x683.jpg", alt: "Gallery Image 6" },
-    { src: "/assets/mycelium/DSC01700-1024x683.jpg", alt: "Gallery Image 7" },
-    { src: "/assets/mycelium/DSC01704-1024x683.jpg", alt: "Gallery Image 8" },
-
+    { src: img1, alt: "Gallery Image 1" },
+    { src: img2, alt: "Gallery Image 2" },
+    { src: img3, alt: "Gallery Image 3" },
+    { src: img4, alt: "Gallery Image 4" },
+    { src: img5, alt: "Gallery Image 5" },
+    { src: img6, alt: "Gallery Image 6" },
+    { src: img7, alt: "Gallery Image 7" },
+    { src: img8, alt: "Gallery Image 8" },
   ];
   
   return (
@@ -31,7 +40,7 @@ const Mycelium = () => {
 
         <div className="project-main-image">
           <img 
-            src="/assets/mycelium/DSC01688-1024x683.jpg" 
+            src={heroImg} 
             alt="Head img" 
             className="hero-image"
           />

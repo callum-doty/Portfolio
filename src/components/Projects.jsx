@@ -1,5 +1,9 @@
 import { useNavigate } from 'react-router-dom'; // Import the navigate hook
 import '../styles/Projects.css';
+import palterImg from '../assets/palteretc/DSC01647-1024x683.jpg';
+import myceliumImg from '../assets/mycelium/DSC01699-1024x683.jpg';
+import chergeImg from '../assets/cherge/cherge_hero.png';
+
 
 const ArrowIcon = () => (
   <svg 
@@ -30,19 +34,19 @@ const Projects = () => {
     {
       title: "Palter",
       description: "Palter is a four to eight player social deduction game concerning subtle hints and observations via a mind-bending dialogue.",
-      image: "/assets/palteretc/DSC01647-1024x683.jpg",
+      image: palterImg,
       path: "/projects/palter"
     },
     {
       title: "Mycelium",
       description: "Mycelium is a seventy-page catalog for the 2023 Virginia Commonwealth University graphic design exhibition.",
-      image: "/assets/mycelium/DSC01699-1024x683.jpg",
+      image: myceliumImg,
       path: "/projects/mycelium"
     },
     {
       title: "Cherge",
       description: "Cherge is an Ecommerce platform for chess players to build, customize, and purchase their ideal chess piece(s).",
-      image: "/assets/cherge/cherge_hero.png",
+      image: chergeImg,
       path: "/projects/cherge"
     },
   ];

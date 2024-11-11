@@ -1,28 +1,44 @@
 import React from 'react';
 import '../../styles/Palter.css';
 
+import heroImg from '../../assets/palteretc/DSC01646-1024x683.jpg';
+import img1 from '../../assets/palteretc/DSC01643-1024x683.jpg';
+import img2 from '../../assets/palteretc/DSC01644-1024x683.jpg';
+import img3 from '../../assets/palteretc/DSC01648-1024x683.jpg';
+import img4 from '../../assets/palteretc/DSC01646-1024x683.jpg';
+import img5 from '../../assets/palteretc/DSC01647-1024x683.jpg';
+import img6 from '../../assets/palteretc/DSC01655-1024x683.jpg';
+import img7 from '../../assets/palteretc/DSC01657-1024x683.jpg';
+import img8 from '../../assets/palteretc/DSC01659-1024x683.jpg';
+import img9 from '../../assets/palteretc/DSC01662-1024x683.jpg';
+import img10 from '../../assets/palteretc/DSC01664-1024x683.jpg';
+import img11 from '../../assets/palteretc/DSC01675-1024x683.jpg';
+import img12 from '../../assets/palteretc/p1.jpg';
+import img15 from '../../assets/palteretc/DSC01666-1024x683.jpg';
+
+
 const Palter = () => {
   const videoId = "Ses9fye4dFc";
   const embedUrl = `https://www.youtube.com/embed/${videoId}`; // Changed this line
 
   const galleryImages = [
-    { src: "/assets/palteretc/DSC01643-1024x683.jpg", alt: "Gallery Image 1" },
-    { src: "/assets/palteretc/DSC01644-1024x683.jpg", alt: "Gallery Image 2" },
-    { src: "/assets/palteretc/DSC01648-1024x683.jpg", alt: "Gallery Image 3" },
-    { src: "/assets/palteretc/DSC01646-1024x683.jpg", alt: "Gallery Image 4" },
-    { src: "/assets/palteretc/DSC01647-1024x683.jpg", alt: "Gallery Image 5" },
-    { src: "/assets/palteretc/DSC01655-1024x683.jpg", alt: "Gallery Image 6" },
-    { src: "/assets/palteretc/DSC01657-1024x683.jpg", alt: "Gallery Image 7" },
-    { src: "/assets/palteretc/DSC01659-1024x683.jpg", alt: "Gallery Image 8" },
-    { src: "/assets/palteretc/DSC01662-1024x683.jpg", alt: "Gallery Image 9" },
-    { src: "/assets/palteretc/DSC01664-1024x683.jpg", alt: "Gallery Image 10" },
-    { src: "/assets/palteretc/DSC01675-1024x683.jpg", alt: "Gallery Image 11" },
-    { src: "/assets/palteretc/p1.jpg", alt: "Gallery Image 12" },
+    { src: img1, alt: "Gallery Image 1" },
+    { src: img2, alt: "Gallery Image 2" },
+    { src: img3, alt: "Gallery Image 3" },
+    { src: img4, alt: "Gallery Image 4" },
+    { src: img5, alt: "Gallery Image 5" },
+    { src: img6, alt: "Gallery Image 6" },
+    { src: img7, alt: "Gallery Image 7" },
+    { src: img8, alt: "Gallery Image 8" },
+    { src: img9, alt: "Gallery Image 9" },
+    { src: img10, alt: "Gallery Image 10" },
+    { src: img11, alt: "Gallery Image 11" },
+    { src: img12, alt: "Gallery Image 12" },
     // Using first 4 images again to complete the 16-image grid
-    { src: "/assets/palteretc/DSC01643-1024x683.jpg", alt: "Gallery Image 13" },
-    { src: "/assets/palteretc/DSC01644-1024x683.jpg", alt: "Gallery Image 14" },
-    { src: "/assets/palteretc/DSC01666-1024x683.jpg", alt: "Gallery Image 15" },
-    { src: "/assets/palteretc/DSC01646-1024x683.jpg", alt: "Gallery Image 16" }
+    { src: img1, alt: "Gallery Image 13" },
+    { src: img2, alt: "Gallery Image 14" },
+    { src: img15, alt: "Gallery Image 15" },
+    { src: img4, alt: "Gallery Image 16" }
   ];
   
   return (
@@ -38,7 +54,7 @@ const Palter = () => {
 
         <div className="project-main-image">
           <img 
-            src="/assets/palteretc/DSC01646-1024x683.jpg" 
+            src={heroImg} 
             alt="Head img" 
             className="hero-image"
           />

@@ -3,7 +3,35 @@ import '../styles/ProjectGallery.css';
 import { Link, Routes, Route, useParams, useNavigate } from 'react-router-dom';
 import { Document, Page, pdfjs } from 'react-pdf';
 
-pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
+import pdf1 from '../assets/axiom/esports-poster-draft.pdf';
+import pdf2 from '../assets/axiom/ljproj-draft04.pdf';
+import pdf3 from '../assets/axiom/gamingclub-draft.pdf';
+import axiom1 from '../assets/axiom/AX (1).pdf';
+import axiom2 from '../assets/axiom/AX (2).pdf';
+import axiom3 from '../assets/axiom/AX (3).pdf';
+import axiom4 from '../assets/axiom/AX (4).pdf';
+import axiom5 from '../assets/axiom/AX (5).pdf';
+import axiom6 from '../assets/axiom/AX (6).pdf';
+import axiom7 from '../assets/axiom/AX (7).pdf';
+import axiom8 from '../assets/axiom/AX (8).pdf';
+import axiom9 from '../assets/axiom/AX (9).pdf';
+import axiom10 from '../assets/axiom/AX (10).pdf';
+import axiom11 from '../assets/axiom/AX (11).pdf';
+import axiom12 from '../assets/axiom/AX (12).pdf';
+import axiom13 from '../assets/axiom/AX (13).pdf';
+import axiom14 from '../assets/axiom/AX (14).pdf';
+import axiom15 from '../assets/axiom/AX (15).pdf';
+import axiom16 from '../assets/axiom/AX (16).pdf';
+import axiom17 from '../assets/axiom/AX (17).pdf';
+import axiom18 from '../assets/axiom/AX (18).pdf';
+import axiom19 from '../assets/axiom/AX (19).pdf';
+import axiom20 from '../assets/axiom/AX (20).pdf';
+import axiom21 from '../assets/axiom/AX (21).pdf';
+import axiom22 from '../assets/axiom/AX (22).pdf';
+import axiom23 from '../assets/axiom/AX (23).pdf';
+import axiom24 from '../assets/axiom/AX (24).pdf';
+
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const SimpleGallery = () => {
   const galleryRef = useRef(null);
@@ -14,111 +42,111 @@ const SimpleGallery = () => {
   const projects = [
     {
       id: 'rand1',
-      image: '/assets/axiom/esports-poster-draft.pdf'
+      image: pdf1
     },
     {
       id: 'rand2',
-      image: '/assets/axiom/ljproj-draft04.pdf'
+      image: pdf2
     },
     {
       id: 'rand3',
-      image: '/assets/axiom/gamingclub-draft.pdf'
+      image: pdf3
     },
     {
       id: 'axiom1',
-      image: '/assets/axiom/AX (1).pdf'
+      image: axiom1
     },
     {
       id: 'axiom2',
-      image: '/assets/axiom/AX (2).pdf'
+      image: axiom2
     },
     {
       id: 'axiom3',
-      image: '/assets/axiom/AX (3).pdf'
+      image: axiom3
     },
     {
       id: 'axiom4',
-      image: '/assets/axiom/AX (4).pdf'
+      image: axiom4
     },
     {
       id: 'axiom5',
-      image: '/assets/axiom/AX (5).pdf'
+      image: axiom5
     },
     {
       id: 'axiom6',
-      image: '/assets/axiom/AX (6).pdf'
+      image: axiom6
     },
     {
       id: 'axiom7',
-      image: '/assets/axiom/AX (7).pdf'
+      image: axiom7
     },
     {
       id: 'axiom8',
-      image: '/assets/axiom/AX (8).pdf'
+      image: axiom8
     },
     {
       id: 'axiom9',
-      image: '/assets/axiom/AX (9).pdf'
+      image: axiom9
     },
     {
       id: 'axiom10',
-      image: '/assets/axiom/AX (10).pdf'
+      image: axiom10
     },
     {
       id: 'axiom11',
-      image: '/assets/axiom/AX (11).pdf'
+      image: axiom11
     },
     {
       id: 'axiom12',
-      image: '/assets/axiom/AX (12).pdf'
+      image: axiom12
     },
     {
       id: 'axiom13',
-      image: '/assets/axiom/AX (13).pdf'
+      image: axiom13
     },
     {
       id: 'axiom14',
-      image: '/assets/axiom/AX (14).pdf'
+      image: axiom14
     },
     {
       id: 'axiom15',
-      image: '/assets/axiom/AX (15).pdf'
+      image: axiom15
     },
     {
       id: 'axiom16',
-      image: '/assets/axiom/AX (16).pdf'
+      image: axiom16
     },
     {
       id: 'axiom17',
-      image: '/assets/axiom/AX (17).pdf'
+      image: axiom17
     },
     {
       id: 'axiom18',
-      image: '/assets/axiom/AX (18).pdf'
+      image: axiom18
     },
     {
       id: 'axiom19',
-      image: '/assets/axiom/AX (19).pdf'
+      image: axiom19
     },
     {
       id: 'axiom20',
-      image: '/assets/axiom/AX (20).pdf'
+      image: axiom20
     },
     {
       id: 'axiom21',
-      image: '/assets/axiom/AX (21).pdf'
+      image: axiom21
     },
     {
       id: 'axiom22',
-      image: '/assets/axiom/AX (22).pdf'
+      image: axiom22
     },
     {
       id: 'axiom23',
-      image: '/assets/axiom/AX (23).pdf'
+      image: axiom23
     },
     {
       id: 'axiom24',
-      image: '/assets/axiom/AX (24).pdf'
+      image: axiom24
     }
   ];
 
@@ -199,7 +227,7 @@ const SimpleGallery = () => {
 
   return (
     <div className="gallery-container">
-      <div classname="title">
+      <div className="title">
         <div className="vertical-text2">Project Gallery</div>
         <div className="disclaimer">DISCLAIMER: THE WORKS PRESENTED ARE FOR DEMONSTRATION PURPOSES ONLY AND DO NOT REFLECT PERSONAL VIEWS OR OPINION. <br />I HAVE EITHER CREATED OR EDITED THE ARTWORK BELOW.</div>
       </div>
@@ -207,15 +235,9 @@ const SimpleGallery = () => {
         {distributeItems().map((column, columnIndex) => (
           <div key={columnIndex} className="masonry-column">
             {column.map((project) => (
-              <a
-                key={project.id}
-                href={getGitHubPDFUrl(project.image)}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="masonry-item"
-              >
+              <div key={project.id} className="masonry-item">
                 {renderItem(project)}
-              </a>
+              </div>
             ))}
           </div>
         ))}

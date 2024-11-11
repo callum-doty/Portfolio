@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useMatch, useResolvedPath, useNavigate, useLocation } from "react-router-dom";
 import '../styles/Header.css';
+import logo from '../assets/logo_callumdoty.png';
 
 function CustomLink({ to, children, onClick, ...props }) {
   const resolvedPath = useResolvedPath(to);
@@ -54,7 +55,7 @@ export default function Header() {
         {/* Logo */}
         <Link to="/" className="logo">
           <img 
-            src="/assets/logo_callumdoty.png" 
+            src={logo} 
             alt="Callum Doty Logo" 
             className="logo-img" 
           />

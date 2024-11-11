@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../styles/Cherge.css';
+import processDoc from '../../assets/cherge/Case-study-cherge.pdf';
 
 const Cherge = () => {
   
@@ -16,7 +17,7 @@ const Cherge = () => {
 
       <div className="button-container">
         <a
-          href="/assets/cherge/Case-study-cherge.pdf"
+          href={processDoc}
           target="_blank"
           rel="noopener noreferrer"
           className="process-deck-button"
